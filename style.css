@@ -235,3 +235,62 @@ footer {
     padding-top: 1rem;
   }
 }
+.info-grid,
+.feature-grid,
+.programme-preview-grid,
+.speaker-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.info-box,
+.feature-box,
+.programme-preview-box,
+.speaker-card {
+  background: #f0f5f8;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+.info-box h3,
+.feature-box h3,
+.programme-preview-box h3,
+.speaker-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+  color: var(--dark);
+}
+
+.info-box p,
+.feature-box p,
+.programme-preview-box p,
+.speaker-card p {
+  margin: 0.25rem 0;
+}
+
+.speaker-meta {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.speaker-session {
+  margin-top: 0.6rem;
+  font-size: 0.95rem;
+}
+
+.programme-preview-box ul {
+  margin-bottom: 0;
+  padding-left: 1.2rem;
+}
+
+@media (max-width: 700px) {
+  .info-grid,
+  .feature-grid,
+  .programme-preview-grid,
+  .speaker-grid {
+    grid-template-columns: 1fr;
+  }
+}
